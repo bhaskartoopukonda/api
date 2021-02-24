@@ -51,17 +51,22 @@ public class TermLoanOrignalDate  extends AbstractRestAssuredResponse{
 	@Step("verifies Term loan Orignal date with Negative date")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(dataProviderClass=TestNGDataProvider.class,dataProvider="datafromexcel",groups="Regression")
-	public void termLoanOrignalDateAsNegative(String Orignaldate,String statuCode) throws FileNotFoundException, IOException, ParseException {
+	public void termLoanOrignalDateAsNegative(String loanType_id,String borrower_id,String name,String loanName,String principalAmount,String disbursementDate,String initialPaymentDate,String termType_id,String value,String display,String terms,String originationDate,String maturityDate,String interestRate,String divisor,String interestRateType,String interestRateCode,String rateAdjustment,String amortizationType,String fixedPrincipal,String loanStatus_id,String disbursementAmount) throws FileNotFoundException, IOException, ParseException {
 		SoftAssert softassert = new SoftAssert();
 	
 	
 	
 	
-	Response responseOfCommittNegative = callPOSTMethod(token, payloads.getCommitRequestBody(Orignaldate),data.getCommitURI());
+		try {
+			Response response = callPOSTMethodWithQuery(token,payloads.masterTermloanPreview(loanType_id,borrower_id,name,loanName,principalAmount,disbursementDate,initialPaymentDate,termType_id,value,display,terms,originationDate,maturityDate,interestRate,divisor,interestRateType,interestRateCode,rateAdjustment,amortizationType,fixedPrincipal,loanStatus_id,disbursementAmount),url3+"/api/v1/term-loans/preview","clientId",borrower_id);
+			System.out.println(response.getStatusCode());
+			softassert.assertEquals(response.statusCode(), STATUS_CODE_400, "This is to verfiy status code for Orignal date as Negative");
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 	
-	System.out.println("responseOfCommittNegative:"+responseOfCommittNegative.asString());
-	
-	softassert.assertEquals(responseOfCommittNegative.statusCode(), Integer.valueOf(statuCode).intValue(), "This is to verfiy status code for Orignal date as Negative");
 	softassert.assertAll();
 	}
 	

@@ -49,15 +49,15 @@ public class TermLoanLoanNumber  extends AbstractRestAssuredResponse{
 	@Description("This is a test case which verifies the status code: creation of Term loan setup with Loan Number as Positive data")
 	@Step("verifies Term loan number with Positive data")
 	@Severity(SeverityLevel.BLOCKER)
-@Test(dataProviderClass=TestNGDataProvider.class,dataProvider="datafromexcel",groups="Regression")
-	public void termLoanNumberWithPositiveData(String URI, String statuscode,String LoanNumber) throws FileNotFoundException, IOException, ParseException {
+    //@Test(dataProviderClass=TestNGDataProvider.class,dataProvider="datafromexcel",groups="Regression")
+	public void termLoanNumberWithPositiveData(String loanType_id,String borrower_id,String name,String loanName,String principalAmount,String disbursementDate,String initialPaymentDate,String termType_id,String value,String display,String terms,String originationDate,String maturityDate,String interestRate,String divisor,String interestRateType,String interestRateCode,String rateAdjustment,String amortizationType,String fixedPrincipal,String loanStatus_id,String disbursementAmount) throws FileNotFoundException, IOException, ParseException {
 		
 		SoftAssert softassert = new SoftAssert();
 		try {
-			Response responseOfPreview = callPOSTMethod(token, payloads.getPayloadforPreviewToCheckLoanNumberPositive(LoanNumber),URI);
+			Response response = callPOSTMethodWithQuery(token,payloads.masterTermloanPreview(loanType_id,borrower_id,name,loanName,principalAmount,disbursementDate,initialPaymentDate,termType_id,value,display,terms,originationDate,maturityDate,interestRate,divisor,interestRateType,interestRateCode,rateAdjustment,amortizationType,fixedPrincipal,loanStatus_id,disbursementAmount),url3+"/api/v1/term-loans/preview","clientId",borrower_id);
+			System.out.println(response.getStatusCode());
+			softassert.assertEquals(response.statusCode(), STATUS_CODE_200, "This is to verfiy status code for Orignal date as Negative");
 			
-			softassert.assertEquals(responseOfPreview.statusCode(), STATUS_CODE_400,"this is to verify status code of Term loan setup with Loan Number as Positive Data");
-					
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -75,15 +75,19 @@ public class TermLoanLoanNumber  extends AbstractRestAssuredResponse{
 	@Step("verifies Term loan number with Negative data")
 	@Severity(SeverityLevel.BLOCKER)
 	@Test(dataProviderClass=TestNGDataProvider.class,dataProvider="datafromexcel",groups="Regression")
-	public void termLoanNumberWithNegativeData(String LoanNumber,String URI, String statuscode) throws FileNotFoundException, IOException, ParseException {
+	public void termLoanNumberWithNegativeData(String loanType_id,String borrower_id,String name,String loanName,String principalAmount,String disbursementDate,String initialPaymentDate,String termType_id,String value,String display,String terms,String originationDate,String maturityDate,String interestRate,String divisor,String interestRateType,String interestRateCode,String rateAdjustment,String amortizationType,String fixedPrincipal,String loanStatus_id,String disbursementAmount) throws FileNotFoundException, IOException, ParseException {
 		
 		SoftAssert softassert = new SoftAssert();
 		
-		Response responseOfPreview = callPOSTMethod(token, Payloads.getPayloadforPreviewToCheckLoanNumberNegative(LoanNumber),URI);
-		
-		softassert.assertEquals(responseOfPreview.statusCode(), Integer.valueOf(statuscode).intValue(), "This is to verfiy status code of Term loan Setup-Loan number Negative scenario");
-				
-		softassert.assertAll();
+		try {
+			
+			Response response = callPOSTMethodWithQuery(token,payloads.masterTermloanPreview(loanType_id,borrower_id,name,loanName,principalAmount,disbursementDate,initialPaymentDate,termType_id,value,display,terms,originationDate,maturityDate,interestRate,divisor,interestRateType,interestRateCode,rateAdjustment,amortizationType,fixedPrincipal,loanStatus_id,disbursementAmount),url3+"/api/v1/term-loans/preview","clientId",borrower_id);
+			System.out.println(response.getStatusCode());
+			softassert.assertEquals(response.statusCode(), STATUS_CODE_200, "This is to verfiy status code for Orignal date as Negative");
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	 
 }
 }

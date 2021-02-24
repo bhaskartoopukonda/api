@@ -35,12 +35,12 @@ public class CronJob extends AbstractRestAssuredResponse{
 	JSONFileReader json = new JSONFileReader();
 	
 	
-	 @Feature("Termloan Boerrower")
+	    @Feature("Termloan Boerrower")
 		@Stories(value = { @Story(value = "termaloan status code validation")})
 		@Description("This is a test case which verifies the status code: creation of charge code with positive and negative scenarios")
 		@Step("verifies chargecode module")
 		@Severity(SeverityLevel.BLOCKER)
-		@Test(dataProviderClass=TestNGDataProvider.class,dataProvider="datafromexcel",groups="Regression")
+		//@Test(dataProviderClass=TestNGDataProvider.class,dataProvider="datafromexcel",groups="Regression")
 	    public void runCronjobForFloatingInt(String loanType_id,String borrower_id,String name,String loanName,String principalAmount,String disbursementDate,String initialPaymentDate,String termType_id,String value,String display,String terms,String originationDate,String maturityDate,String interestRate,String divisor,String revisedInterestRate,String revisedInterestRateEffectiveDate,String interestRateType,String interestRateCode,String rateAdjustment,String totalInterest,String amortizationType,String fixedPrincipal,String loanStatus_id,String disbursementAmount) {
 	    	SoftAssert softassert = new SoftAssert();
 	    	try {
@@ -150,6 +150,9 @@ public class CronJob extends AbstractRestAssuredResponse{
 				String lateFeeValue="10";
 				 Response rspn1 = callPOSTMethod(token,payloads.addlatefee(responseOfPreview, "1", "eba0a5fc-c363-11e9-9d62-12e987db82ac",lateFeeValue),url3+"/api/v1/late-fee");
 				 System.out.println(rspn1.getStatusCode());
+				 System.out.println("checking the cron job");
+				 System.out.println("checking the cron job");
+				 System.out.println("checking the cron job");
 				 Response rspn2 = callGETMethodsForCron(data.getCronurl(),"lenderName","staging","effectiveDate","2021-02-12","userName","Mahesh%20Bhart");
 				System.out.println(rspn2.getBody().asString());
 				 System.out.println(rspn.getStatusCode());

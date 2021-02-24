@@ -88,7 +88,7 @@ public class FollowUP extends AbstractRestAssuredResponse{
 	@Description("Verify the get the total counts of follow-up required loans and periods")
 	@Step("Get Attention Required Count")
 	@Severity(SeverityLevel.BLOCKER)
-	//@Test(groups= {"smoke"})
+	@Test(groups= {"smoke"})
 	public void getFollowUpRequiredCount() {
 		
 		SoftAssert softassert = new SoftAssert();
