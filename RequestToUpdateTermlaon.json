@@ -1,0 +1,38 @@
+{
+  "id": "a11ce219-a5d7-44d0-a861-8270637f3980",
+  "loanType": {
+    "id": "c88eca9d-91be-11e9-8da4-0e141bdeec76",
+    "value": "term_loan",
+    "display": "Term Loan"
+  },
+  "borrower": {
+    "id": "4661",
+    "name": "DEMOTESTING-TERM LOAN"
+  },
+  "currency": {
+    "id": 5,
+    "currencyCode": "USD",
+    "description": "USD : US Doll",
+    "decimalPrecision": 2,
+    "systemDefined": false
+  },
+  "loanNumber": "100014",
+  "loanName": "demo",
+  "principalAmount": "343333",
+  "disbursementDate": null,
+  "initialPaymentDate": null,
+  "termType": {
+    "id": "c8862fb9-91be-11e9-8da4-0e141bdeec76",
+    "value": "months",
+    "display": "Months"
+  },
+  "terms": "3",
+  "originationDate": "06/28/2019",
+  "maturityDate": null,
+  "includeLoanBalanceInReserve": null,
+  "interestRate": 3,
+  "divisor": 12,
+  "comments": null
+}
+
+

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21729" started-at="2021-02-18T10:17:53Z" finished-at="2021-02-18T10:18:15Z">
+    <groups>
+      <group name="Regression">
+        <method signature="TermLoanDisburnsmentDate.termLoanDisburnsmentNegative(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate@2dc3ece8]" name="termLoanDisburnsmentNegative" class="com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Default test" duration-ms="21729" started-at="2021-02-18T10:17:53Z" finished-at="2021-02-18T10:18:15Z">
+      <class name="com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate">
+        <test-method status="PASS" signature="SetEnvironment(java.lang.String, java.lang.String)[pri:0, instance:com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate@2dc3ece8]" name="SetEnvironment" is-config="true" duration-ms="10490" started-at="2021-02-18T10:17:53Z" finished-at="2021-02-18T10:18:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Staging]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetEnvironment -->
+        <test-method status="PASS" signature="SetPayload()[pri:0, instance:com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate@2dc3ece8]" name="SetPayload" is-config="true" duration-ms="180" started-at="2021-02-18T10:18:08Z" finished-at="2021-02-18T10:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetPayload -->
+        <test-method status="PASS" signature="termLoanDisburnsmentNegative(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate@2dc3ece8]" name="termLoanDisburnsmentNegative" duration-ms="3441" started-at="2021-02-18T10:18:10Z" data-provider="datafromexcel" finished-at="2021-02-18T10:18:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eb8f9164-c363-11e9-9d62-12e987db82ac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11622]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ABH-001]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Loan]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[uy784]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[eb8af499-c363-11e9-9d62-12e987db82ac]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[months]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Months]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[fixed]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[11/12/2020]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[fixed]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[normal]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[71eb5fb7-f58e-11e9-9d62-12e987db82ac]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[2000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termLoanDisburnsmentNegative -->
+        <test-method status="PASS" signature="SetPayload()[pri:0, instance:com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate@2dc3ece8]" name="SetPayload" is-config="true" duration-ms="1" started-at="2021-02-18T10:18:13Z" finished-at="2021-02-18T10:18:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetPayload -->
+        <test-method status="PASS" signature="termLoanDisburnsmentNegative(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate@2dc3ece8]" name="termLoanDisburnsmentNegative" duration-ms="2132" started-at="2021-02-18T10:18:13Z" data-provider="datafromexcel" finished-at="2021-02-18T10:18:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eb8f9164-c363-11e9-9d62-12e987db82ac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11622]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ABH-001]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Loan]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[u@&*2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[eb8af499-c363-11e9-9d62-12e987db82ac]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[months]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Months]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[fixed]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[11/12/2020]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[fixed]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[normal]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[null]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[71eb5fb7-f58e-11e9-9d62-12e987db82ac]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[2000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termLoanDisburnsmentNegative -->
+      </class> <!-- com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,28 @@
+{
+ 
+  "chargeCode": "125484",
+  "transactionCode": "8745121",
+  "natSign": {
+    "id": "c8a4a1ee-91be-11e9-8da4-0e141bdeec76",
+    "value": "+",
+    "displayName": "Plus"
+  },
+  "frequency": {
+    "id": "c899aa13-91be-11e9-8da4-0e141bdeec76",
+    "value": "manual",
+    "displayName": "Manual"
+  },
+  "chargeType": {
+    "id": "c8c0f642-91be-11e9-8da4-0e141bdeec76",
+    "value": "original_loan_amount",
+    "displayName": "On Original loan amount",
+    "calculationType": "percentage"
+  },
+  "postingType": {
+    "id": "c8b07347-91be-11e9-8da4-0e141bdeec76",
+    "value": "in_bal",
+    "displayName": "In Balance"
+  },
+  "value": "6",
+  "autoNewClient": true
+}

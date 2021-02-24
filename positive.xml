@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ESB TermLoanService Test">
+	<test verbose="10" name="Regression">
+	<groups>
+	<run>
+	<include name="positive">
+	
+	</include>
+	</run>
+	</groups>
+	
+		<classes>
+			<class name="com.idexcel.termloanservice.scripts.ChargecodeCRUD"/>
+			
+			
+			<methods>
+        <include name="creationOfChargeCodeWithPositiveDetails" />
+       
+       
+      </methods>
+	
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
+
+
+
+ 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ESB TermLoanService Test">
+	<test verbose="10" name="Regression">
+	<groups>
+	<run>
+	<include name="regression">
+	
+	</include>
+	</run>
+	</groups>
+	
+		<classes>
+			<class name="com.idexcel.termloanservice.scripts.ChargecodeCRUD"/>
+			<class name="com.idexcel.termloanservice.scripts.TermLoan" />
+			<class name="com.idexcel.termloanservice.scripts.Chargetemplates" />	
+			<class name="com.idexcel.termloanservice.scripts.OneTimeManualFee" />		
+			<class name="com.idexcel.termloanservice.scripts.Amortization" />		
+			<class name="com.idexcel.termloanservice.scripts.CollateralSetup" />	
+			<class name="com.idexcel.termloanservice.scripts.TermLoanReports" />	
+	
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
+

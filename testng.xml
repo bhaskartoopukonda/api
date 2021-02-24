@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ESB TermLoanService Test">
+	<test verbose="10" name="Regression">
+		<classes>
+						 <class name="com.idexcel.termloanservice.scripts.CronJob" /> 
+			 
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
+
+
+
+ 

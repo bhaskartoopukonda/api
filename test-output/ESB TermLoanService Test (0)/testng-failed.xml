@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ESB TermLoanService Test (0)]">
+  <test verbose="10" name="Regression">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.idexcel.termloanservice.scripts.ChargecodeCRUD"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoan"/>
+      <class name="com.idexcel.termloanservice.scripts.Chargetemplates"/>
+      <class name="com.idexcel.termloanservice.scripts.OneTimeManualFee"/>
+      <class name="com.idexcel.termloanservice.scripts.Amortization"/>
+      <class name="com.idexcel.termloanservice.scripts.CollateralSetup"/>
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- Failed suite [ESB TermLoanService Test (0)] -->

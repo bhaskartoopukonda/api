@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ESB TermLoanService Test]">
+  <test verbose="10" name="Regression">
+    <classes>
+      <class name="com.idexcel.termloanservice.scripts.ChargecodeCRUD"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoan"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanAllGet"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanEdit"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanLoanNumber"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanLoanName"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanDelete"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanDisburnsmentDate"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanInitialPaymentdateNeg"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanOrignalDate"/>
+      <class name="com.idexcel.termloanservice.scripts.Chargetemplates"/>
+      <class name="com.idexcel.termloanservice.scripts.OneTimeManualFee"/>
+      <class name="com.idexcel.termloanservice.scripts.Amortization"/>
+      <class name="com.idexcel.termloanservice.scripts.CollateralSetup"/>
+      <class name="com.idexcel.termloanservice.scripts.TermLoanReports"/>
+      <class name="com.idexcel.termloanservice.scripts.GracePeriod"/>
+      <class name="com.idexcel.termloanservice.scripts.AutoAllocation"/>
+    </classes>
+  </test> <!-- Regression -->
+  <test name="Regression(failed)">
+    <classes>
+      <class name="com.idexcel.termloanservice.scripts.GracePeriod">
+        <methods>
+          <include name="gracedays" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.GracePeriod -->
+      <class name="com.idexcel.termloanservice.scripts.TermLoan">
+        <methods>
+          <include name="termSetup" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.TermLoan -->
+      <class name="com.idexcel.termloanservice.scripts.TermLoanInitialPaymentdateNeg">
+        <methods>
+          <include name="termLoanInitialDateNegative" invocation-numbers="37"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.TermLoanInitialPaymentdateNeg -->
+      <class name="com.idexcel.termloanservice.scripts.TermLoanAllGet">
+        <methods>
+          <include name="termLoanGetRequest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.TermLoanAllGet -->
+      <class name="com.idexcel.termloanservice.scripts.TermLoanLoanName">
+        <methods>
+          <include name="termLoanNameWithNegativedata" invocation-numbers="6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 40 43 45 48"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.TermLoanLoanName -->
+      <class name="com.idexcel.termloanservice.scripts.Amortization">
+        <methods>
+          <include name="amortizationSchelue"/>
+          <include name="amortizationScheluePost"/>
+          <include name="amortization"/>
+          <include name="undoFunctionality" invocation-numbers="0"/>
+          <include name="AmortizationSchedule" invocation-numbers="0 1"/>
+          <include name="amortizationGet" invocation-numbers="0 1"/>
+          <include name="amortizationScheluePutUPdateRegularDate"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.Amortization -->
+      <class name="com.idexcel.termloanservice.scripts.TermLoanLoanNumber">
+        <methods>
+          <include name="termLoanNumberWithNegativeData" invocation-numbers="8 9 15 17 19 23"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.TermLoanLoanNumber -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [ESB TermLoanService Test] -->

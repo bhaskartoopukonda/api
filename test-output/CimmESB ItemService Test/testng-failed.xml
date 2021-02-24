@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CimmESB ItemService Test]">
+  <test name="Regression(failed)">
+    <classes>
+      <class name="com.idexcel.termloanservice.scripts.termservices">
+        <methods>
+          <include name="termloanUserinformationValidation"/>
+        </methods>
+      </class> <!-- com.idexcel.termloanservice.scripts.termservices -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [CimmESB ItemService Test] -->

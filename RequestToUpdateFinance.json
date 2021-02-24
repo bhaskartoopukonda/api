@@ -1,0 +1,16 @@
+{
+  "id": "d36a4cd2-826b-470d-9a67-dfd5c64bd26e",
+  "projectName": "YEARLY_2018_2020",
+  "description": "description of ",
+  "clientName": "FINCLIENTNEFT",
+  "clientId": 8122,
+  "industry": "32, Polish and Other Sanitation Good Manufacturing",
+  "financialPeriod": "YEARLY",
+  "folder": null,
+  "fromPeriod": null,
+  "toPeriod": null,
+  "yearFrom": 2018,
+  "yearTo": 2020,
+  "digitsIn": "N",
+  "hasPFS": true
+}
